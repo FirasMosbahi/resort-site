@@ -6,7 +6,7 @@ export default function Navbar(): React.ReactNode {
       <div className="inline-flex rounded-md shadow-sm mt-8" role="group">
         <button
           type="button"
-          className="px-4 py-2 bg-[#054d9f] text-sm font-medium text-gray-900 bg-white border border-[#054d9f] rounded-s-lg"
+          className="px-4 py-2 bg-[#054d9f] text-sm font-medium text-gray-900 border border-[#054d9f] rounded-s-lg"
         >
           <Home width={20} height={20} />
         </button>

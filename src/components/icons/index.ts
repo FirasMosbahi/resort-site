@@ -1,3 +1,9 @@
+export { default as Calendar } from "./Calendar";
 export { default as Home } from "./Home";
+export { default as Localisation } from "./Localisation";
+export { default as Ok } from "./Ok";
 export { default as SearchIcon } from "./SearchIcon";
+export { default as Star } from "./Star";
+export { default as Trolley } from "./Trolley";
 export { default as UserIcon } from "./UserIcon";
+export { default as WhiteSearchIcon } from "./WhiteSearchIcon";

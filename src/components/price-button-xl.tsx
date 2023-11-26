@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function PriceButton(): React.ReactNode {
+export default function PriceButtonXl(): React.ReactNode {
   return (
     <div
       style={{ borderRadius: 15 }}
@@ -21,11 +21,9 @@ export default function PriceButton(): React.ReactNode {
             </strong>
           </div>
           <div className="p-1">
-            <div className="flex leading-3 flex-col bg-white text-[#0f4d99] text-xs justify-center mr-2">
-              <p>Hébergement en</p>
-              <strong>LPD</strong>
-              <p>Enfants -6 ans</p>
-              <strong>Gratuit</strong>
+            <div className="flex text-2xl flex-col bg-white text-[#0f4d99] justify-center mr-2">
+              <strong>Sans</strong>
+              <strong>Avance</strong>
             </div>
           </div>
         </div>

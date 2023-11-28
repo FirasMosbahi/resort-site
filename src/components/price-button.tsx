@@ -13,15 +13,15 @@ export default function PriceButton(): React.ReactNode {
         >
           <div
             id="price"
-            className="flex flex-col items-center border rounded-xl pl-2 pb-2 pr-2 mr-2 text-white w-fit bg-gradient-to-r from-[#004fa6] to-[#02c9b2]"
+            className="flex flex-col items-center border text-center rounded-xl pl-2 pb-2 pr-2 mr-2 text-white w-fit bg-gradient-to-r from-[#004fa6] to-[#02c9b2]"
           >
             <p className="text-xs pb-2">A partir de</p>
-            <strong className="text-3xl">
+            <strong className="xl:text-3xl text-sm">
               499<sup>TND</sup> / Mois
             </strong>
           </div>
-          <div className="p-1">
-            <div className="flex leading-3 flex-col bg-white text-[#0f4d99] text-xs justify-center mr-2">
+          <div className="p-1 flex flex-col justify-center">
+            <div className="flex leading-3 flex-col bg-white text-[#0f4d99] text-xs items-start mr-2">
               <p>Hébergement en</p>
               <strong>LPD</strong>
               <p>Enfants -6 ans</p>

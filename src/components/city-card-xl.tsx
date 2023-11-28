@@ -29,7 +29,7 @@ export default function CityCardXl(): React.ReactNode {
                 Indonésie
               </p>
               <p className="flex text-xs pt-1 pl-8 flex-row gap-2 items-center">
-                Note : <Stars number={5} />
+                Note : <Stars number={5} width={100} height={100} />
               </p>
             </div>
             <div className="flex flex-col my-4">

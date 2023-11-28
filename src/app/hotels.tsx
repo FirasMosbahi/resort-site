@@ -7,6 +7,8 @@ export default function Hotels(): React.ReactNode {
     cards.push(<HotelCard />);
   }
   return (
-    <div className="bg-white grid grid-cols-2 gap-16 px-4 py-8">{cards}</div>
+    <div className="bg-white lg:grid xl:grid-cols-2 grid-cols-1 md:flex md:flex-col sm:flex sm:flex-col gap-16 md:gap-8 px-4 py-8">
+      {cards}
+    </div>
   );
 }

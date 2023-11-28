@@ -15,15 +15,15 @@ import {
 export default function NocesVoyagesFilter(): React.ReactNode {
   return (
     <div className="mt-8">
-      <div className="flex flex-col gap-8 w-2/5">
-        <form className="flex flex-row">
+      <div className="flex flex-col gap-8 w-fit">
+        <form className="flex flex-col gap-4 sm:gap-0 sm:flex-row ">
           <InputWithIcon
             input={
               <>
                 <select
                   id="countries"
                   placeholder="Sélectionner une ville ou un hotel"
-                  className="pl-12 w-52 h-12 bg-white text-sm font-medium text-gray-900 border rounded-s-lg"
+                  className="pl-12 w-80 sm:w-52 h-12 bg-white text-sm font-medium text-gray-900 rounded-xl sm:rounded-none sm:rounded-l-xl"
                 >
                   <option>Hotels en Tunisie</option>
                   <option value="CA">H1</option>
@@ -43,7 +43,7 @@ export default function NocesVoyagesFilter(): React.ReactNode {
               <>
                 <select
                   id="date"
-                  className="pl-16 px-4 py-2 w-40 h-12 text-sm font-medium text-gray-900 bg-white border border-b border-gray-200"
+                  className="pl-16 px-4 py-2 w-80 sm:w-40 h-12 text-sm font-medium text-gray-900 bg-white border border-b border-gray-200 rounded-xl sm:rounded-none"
                 >
                   <option>Vols</option>
                   <option value="US">United States</option>
@@ -63,7 +63,7 @@ export default function NocesVoyagesFilter(): React.ReactNode {
               <>
                 <select
                   id="countries"
-                  className="pl-12 px-4 py-2 w-40 h-12 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-e-lg "
+                  className="pl-12 px-4 py-2 w-80 sm:w-40 h-12 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-xl sm:rounded-none sm:rounded-r-xl"
                 >
                   <option selected>Voyages</option>
                   <option value="US">United States</option>
@@ -82,14 +82,14 @@ export default function NocesVoyagesFilter(): React.ReactNode {
         </form>
         <div className="bg-white pt-8 pb-2 rounded-xl mr-8">
           <div className="flex flex-row items-center gap-4 ml-4 pb-4 border-b-2 border-[#586263] mr-4">
-            <Map width={75} height={75} />
+            <Map className="w-16 h-16" />
             <div className="flex flex-col">
               <strong className="text-[#646868]">Région</strong>
               <p className="text-[#8b8f92]">Ou allez vous ?</p>
             </div>
           </div>
-          <div className="flex flex-row items-center gap-4 ml-4 pb-4 border-b-2 border-[#586263] mr-4">
-            <Calendar2 width={75} height={75} />
+          <div className="flex flex-row items-center pt-4 gap-4 ml-4 pb-4 border-b-2 border-[#586263] mr-4">
+            <Calendar2 className="w-16 h-16" />
             <div className="flex flex-col">
               <strong className="text-[#646868]">
                 Votre Arrivée - Votre Départ
@@ -98,7 +98,7 @@ export default function NocesVoyagesFilter(): React.ReactNode {
             </div>
           </div>
           <div className="flex flex-row items-center gap-4 ml-4 pb-4 border-b-2 border-[#586263] mr-4">
-            <Sleep width={75} height={75} />
+            <Sleep className="w-16 h-16" />
             <div className="flex flex-col">
               <strong className="text-[#646868]">Chambres</strong>
               <p className="text-[#8b8f92]">

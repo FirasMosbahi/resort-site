@@ -9,7 +9,7 @@ export default function NocesVoyagesIndex(): React.ReactNode {
     <>
       <NocesVoyagesFilter />
       <div className="bg-white mr-32 ml-8">
-        <div className="flex flex-col xl:flex-row gap-4 mt-16 w-screen">
+        <div className="flex flex-col lg:flex-row gap-4 mt-16 w-screen">
           <VoyageCard title="Voyages Organisées" />
           <VoyageCardWithImg
             title="Circuits Sud"
@@ -20,7 +20,7 @@ export default function NocesVoyagesIndex(): React.ReactNode {
           <strong className="ml-4">Voyages de Noces / A la Carte</strong>
           <p className="mr-4">Voir Tous</p>
         </div>
-        <div className="grid grid-cols-3">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
           <CityCard isHorizontal={false} />
           <CityCard isHorizontal={false} />
           <CityCard isHorizontal={false} />
@@ -29,7 +29,7 @@ export default function NocesVoyagesIndex(): React.ReactNode {
           <strong className="ml-4">Hotels en Tunisie :</strong>
           <p className="mr-4">Voir Tous</p>
         </div>
-        <div className="grid grid-cols-2 gap-8 pb-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 pb-24">
           <VoyageCardWithImg imageUrl={"/hotel-categories/hotel-sur-mer.jpg"} />
           <VoyageCardWithImg
             imageUrl={"/hotel-categories/hotel-recommandé.jpg"}

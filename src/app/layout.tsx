@@ -27,7 +27,7 @@ export default function RootLayout({
           width: "99vw",
           height: "100vh",
         }}
-        className={`${inter.className} pl-20`}
+        className={`${inter.className} lg:pl-20`}
       >
         <Header />
         {children}

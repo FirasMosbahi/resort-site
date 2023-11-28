@@ -4,7 +4,7 @@ import CityCardXl from "@resort-site/components/city-card-xl";
 
 export default function VoyagesIndex(): React.ReactNode {
   return (
-    <div className="flex flex-row bg-white mr-32 mt-8">
+    <div className="flex flex-col lg:flex-row bg-white mr-8 pr-8 xl:mr-32 mt-8">
       <SearchFilter />
       <div className="flex flex-col items-start mt-6 flex-1">
         <CityCardXl />

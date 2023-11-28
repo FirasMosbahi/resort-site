@@ -8,22 +8,19 @@ import Navbar from "@resort-site/components/navbar";
 export default function Header(): React.ReactNode {
   return (
     <>
-      <div className="flex flex-row justify-between mt-16">
-        <Image
-          src="/logo_jektis.png"
-          alt="jektis logo"
-          width={500}
-          height={500}
-        />
-        <div className="flex flex-col">
-          <div className="flex flex-row pl-80">
-            <SearchInput />
-            <LoginButton />
+      <div className="justify-between w-screen block">
+        <div className="flex flex-col xl:flex-row justify-between mt-16">
+          <img src="/logo_jektis.png" alt="jektis logo" />
+          <div className="flex flex-col">
+            <div className="hidden xl:flex xl:flex-row pl-80 pr-24">
+              <SearchInput />
+              <LoginButton />
+            </div>
+            <Infos />
           </div>
-          <Infos />
         </div>
+        <Navbar />
       </div>
-      <Navbar />
     </>
   );
 }

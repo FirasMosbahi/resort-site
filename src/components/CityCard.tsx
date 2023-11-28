@@ -1,5 +1,6 @@
 import React from "react";
 import Stars from "@resort-site/components/stars";
+import StaticStars from "@resort-site/components/static-stars";
 
 export default function CityCard({
   isHorizontal,
@@ -44,7 +45,7 @@ export default function CityCard({
               }
             >
               <p className="flex flex-row gap-2 items-center">
-                Note : <Stars number={5} />
+                Note : <StaticStars number={5} />
               </p>
               <div className="flex flex-row justify-start">
                 <button className="flex flex-row text-white mt-8 px-4 border rounded-2xl items-center bg-gradient-to-r from-[#004fa6] to-[#02c9b2] p-1">

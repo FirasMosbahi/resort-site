@@ -1,3 +1,4 @@
+"use client";
 import VoyageOffer from "@resort-site/components/voyage-offer";
 import VoyageNavbar from "@resort-site/components/voyage/voyage-navbar";
 import VoyageDetails from "@resort-site/components/voyage-group/voyage-details";

@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import NocesVoyagesFilter from "@resort-site/components/noces-voyages-filter";
 import VoyageCard from "@resort-site/components/Voyage-card";

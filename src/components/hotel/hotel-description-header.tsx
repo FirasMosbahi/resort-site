@@ -14,7 +14,7 @@ export default function HotelDescriptionHeader(): React.ReactNode {
         </div>
         <Stars number={5} height={30} width={30} />
       </div>
-      <PriceButton />
+      <PriceButton price={499} enfantGratuit={false} />
     </div>
   );
 }

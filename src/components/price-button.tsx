@@ -23,7 +23,7 @@ export default function PriceButton({
           >
             <p className="text-xs pb-2">A partir de</p>
             <strong className="xl:text-3xl text-sm">
-              {price}
+              {price ?? 2999}
               <sup>TND</sup> / Mois
             </strong>
           </div>

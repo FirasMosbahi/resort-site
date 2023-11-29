@@ -1,5 +1,4 @@
 import React from "react";
-import { Star } from "@resort-site/components/icons";
 import PriceButton from "@resort-site/components/price-button";
 import Stars from "@resort-site/components/stars";
 

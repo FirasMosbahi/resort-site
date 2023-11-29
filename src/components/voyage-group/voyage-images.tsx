@@ -11,7 +11,7 @@ export default function VoyageImages(): React.ReactNode {
   const images: React.ReactNode[] = [];
   let imagesHeight = 0;
   let index = 0;
-  while (imagesHeight < document.documentElement.scrollHeight) {
+  while (imagesHeight < 1500) {
     images.push(
       <img
         key={index}

@@ -10,19 +10,6 @@ export default function VoyageCardWithImg({
   title?: string;
   imageUrl: string;
 }): React.ReactNode {
-  const [width, setWidth] = useState(window.innerWidth);
-
-  const handleResize = () => {
-    setWidth(window.innerWidth);
-  };
-
-  useEffect(() => {
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
   return (
     <div className="flex w-full flex-col mt-16 sm:mt-0 mr-12 lg:mr-0">
       {title && (
@@ -39,7 +26,9 @@ export default function VoyageCardWithImg({
       <div className={`flex flex-col justify-center sm:flex-row gap-4`}>
         <MiniCityCard />
         <MiniCityCard />
-        {width > 650 && <MiniCityCard />}
+        <div className="md:block hidden">
+          <MiniCityCard />
+        </div>
       </div>
     </div>
   );

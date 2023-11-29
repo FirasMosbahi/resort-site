@@ -1,6 +1,12 @@
 import React from "react";
 
-export default function PriceButton(): React.ReactNode {
+export default function PriceButton({
+  price,
+  enfantGratuit,
+}: {
+  price: number;
+  enfantGratuit: boolean;
+}): React.ReactNode {
   return (
     <div
       style={{ borderRadius: 15 }}
@@ -17,15 +23,16 @@ export default function PriceButton(): React.ReactNode {
           >
             <p className="text-xs pb-2">A partir de</p>
             <strong className="xl:text-3xl text-sm">
-              499<sup>TND</sup> / Mois
+              {price}
+              <sup>TND</sup> / Mois
             </strong>
           </div>
           <div className="p-1 flex flex-col justify-center">
             <div className="flex leading-3 flex-col bg-white text-[#0f4d99] text-xs items-start mr-2">
               <p>Hébergement en</p>
               <strong>LPD</strong>
-              <p>Enfants -6 ans</p>
-              <strong>Gratuit</strong>
+              {enfantGratuit && <p>Enfants -6 ans</p>}
+              {enfantGratuit && <strong>Gratuit</strong>}
             </div>
           </div>
         </div>

@@ -1,6 +1,12 @@
 import React from "react";
 
-export default function PriceButtonXl(): React.ReactNode {
+export default function PriceButtonXl({
+  price,
+  payementType,
+}: {
+  price: number;
+  payementType: string;
+}): React.ReactNode {
   return (
     <div
       style={{ borderRadius: 15 }}
@@ -17,13 +23,15 @@ export default function PriceButtonXl(): React.ReactNode {
           >
             <p className="text-xs pb-2">A partir de</p>
             <strong className="text-3xl">
-              499<sup>TND</sup> / Mois
+              {price}
+              <sup>TND</sup> / Mois
             </strong>
           </div>
           <div className="p-1">
             <div className="flex text-2xl flex-col bg-white text-[#0f4d99] justify-center mr-2">
-              <strong>Sans</strong>
-              <strong>Avance</strong>
+              {payementType.split(" ").map((e, index) => (
+                <strong key={index}>{e}</strong>
+              ))}
             </div>
           </div>
         </div>

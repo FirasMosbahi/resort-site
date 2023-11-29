@@ -33,7 +33,7 @@ export default function HotelReservationTableItem(): React.ReactNode {
             id="countries"
             className="ml-2 w-40 lg:w-72 h-8 border bg-[#ececec] border-white xl:border-white text-gray-900 rounded-lg block "
           >
-            <option selected className="text-sm lg:text-xl">
+            <option className="text-sm lg:text-xl">
               Logement petit déjeuner
             </option>
             <option className="text-sm lg:text-xl">

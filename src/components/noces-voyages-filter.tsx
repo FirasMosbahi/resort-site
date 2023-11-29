@@ -2,13 +2,11 @@ import React from "react";
 import InputWithIcon from "@resort-site/components/input-with-icon";
 import {
   Bagagge,
-  Calendar,
   Calendar2,
   Localisation,
   Map,
   Plane,
   Sleep,
-  Trolley,
   WhiteSearchIcon,
 } from "@resort-site/components/icons";
 
@@ -65,7 +63,7 @@ export default function NocesVoyagesFilter(): React.ReactNode {
                   id="countries"
                   className="pl-12 px-4 py-2 w-80 sm:w-40 h-12 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-xl sm:rounded-none sm:rounded-r-xl"
                 >
-                  <option selected>Voyages</option>
+                  <option>Voyages</option>
                   <option value="US">United States</option>
                   <option value="CA">Canada</option>
                   <option value="FR">France</option>

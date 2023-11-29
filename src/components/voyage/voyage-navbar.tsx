@@ -3,7 +3,7 @@ import React from "react";
 export default function VoyageNavbar(): React.ReactNode {
   return (
     <div
-      className="hidden bg-gradient-to-r from-[#004fa6] to-[#02c9b2] lg:inline-flex border-transparent rounded-xl shadow-sm mt-8"
+      className="hidden bg-gradient-to-r w-full from-[#004fa6] to-[#02c9b2] lg:inline-flex border-transparent rounded-xl shadow-sm mt-8"
       role="group"
     >
       <button

@@ -8,15 +8,11 @@ export default function VoyageCard({
 }: {
   title: string;
 }): React.ReactNode {
-  const [horizontal, setHorizontal] = useState(window.innerWidth < 700);
+  const [width, setWidth] = useState<number>(window.innerWidth);
 
   const handleResize = () => {
     console.log(window.innerWidth);
-    if (window.innerWidth < 700) {
-      setHorizontal(false);
-    } else {
-      setHorizontal(true);
-    }
+    setWidth(window.innerWidth);
   };
 
   useEffect(() => {
@@ -27,16 +23,16 @@ export default function VoyageCard({
     };
   }, []);
   return (
-    <div className="flex flex-col w-max">
+    <div className="flex flex-col w-full">
       <div className="flex flex-row mb-4 border rounded-xl justify-between bg-gradient-to-r from-[#004fa6] to-[#02c9b2] p-1">
         <strong className="ml-4">{title}</strong>
         <p className="mr-4">Voir Tous</p>
       </div>
-      <CityCard isHorizontal={horizontal} />
-      <div className={`grid grid-cols-${horizontal ? "3" : "2"} gap-4`}>
+      <CityCard isHorizontal={width > 700} />
+      <div className={`flex flex-col sm:flex-row justify-center gap-4`}>
         <MiniCityCard />
         <MiniCityCard />
-        {horizontal && <MiniCityCard />}
+        {width > 650 && <MiniCityCard />}
       </div>
     </div>
   );

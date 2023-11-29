@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import CityCard from "@resort-site/components/CityCard";
 import MiniCityCard from "@resort-site/components/mini-city-card";
 
 export default function VoyageCardWithImg({
@@ -11,15 +10,10 @@ export default function VoyageCardWithImg({
   title?: string;
   imageUrl: string;
 }): React.ReactNode {
-  const [horizontal, setHorizontal] = useState(window.innerWidth < 700);
+  const [width, setWidth] = useState(window.innerWidth);
 
   const handleResize = () => {
-    console.log(window.innerWidth);
-    if (window.innerWidth < 700) {
-      setHorizontal(false);
-    } else {
-      setHorizontal(true);
-    }
+    setWidth(window.innerWidth);
   };
 
   useEffect(() => {
@@ -30,7 +24,7 @@ export default function VoyageCardWithImg({
     };
   }, []);
   return (
-    <div className="flex flex-col mr-12 lg:mr-0">
+    <div className="flex w-full flex-col mt-16 sm:mt-0 mr-12 lg:mr-0">
       {title && (
         <div className="flex flex-row mb-4 border rounded-xl justify-between bg-gradient-to-r from-[#004fa6] to-[#02c9b2] p-1">
           <strong className="ml-4">{title}</strong>
@@ -38,13 +32,14 @@ export default function VoyageCardWithImg({
         </div>
       )}
       <img
+        alt="img"
         src={imageUrl}
-        className="md:h-72 md:w-full xl:h-80 border-transparent rounded-xl"
+        className="md:h-80 h-60 w-96 md:w-full xl:h-80 border-transparent rounded-xl"
       />
-      <div className={`grid grid-cols-${horizontal ? "3" : "2"} gap-4`}>
+      <div className={`flex flex-col justify-center sm:flex-row gap-4`}>
         <MiniCityCard />
         <MiniCityCard />
-        {horizontal && <MiniCityCard />}
+        {width > 650 && <MiniCityCard />}
       </div>
     </div>
   );

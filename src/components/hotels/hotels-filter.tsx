@@ -63,7 +63,7 @@ export default function HotelsFilter(): React.ReactNode {
                   id="countries"
                   className="pl-12 px-4 xl:rounded-r-xl py-2 w-80 h-12 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-xl xl:border-b xl:rounded-none "
                 >
-                  <option selected>1 chambre : 2 adultes + 0 enfants</option>
+                  <option>1 chambre : 2 adultes + 0 enfants</option>
                   <option value="US">United States</option>
                   <option value="CA">Canada</option>
                   <option value="FR">France</option>

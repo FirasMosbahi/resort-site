@@ -4,7 +4,7 @@ export default function MiniCityCard(): React.ReactNode {
   return (
     <>
       <div
-        className="relative w-48 bg-cover bg-center h-56 mt-4 flex flex-col justify-end border-transparent rounded-xl"
+        className="relative  bg-cover bg-center h-56 mt-4 flex flex-col justify-end border-transparent rounded-xl"
         style={{
           backgroundImage: `url(https://media.gettyimages.com/photos/pura-ulun-danu-bratan-temple-in-bali-picture-id675172642)`,
         }}

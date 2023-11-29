@@ -3,9 +3,9 @@ import React from "react";
 export default function VoyageOffer(): React.ReactNode {
   return (
     <div className="relative mb-8 ml-6">
-      <div className="text-black flex flex-row gap-4 items-end mb-8">
-        <strong className="text-6xl">DUBAI</strong>
-        <p className="text-2xl">Emirates arabes unis - 6 Nuits / 7 Jours</p>
+      <div className="text-black flex flex-row gap-32 lg:gap-4 justify-center items-end mb-8">
+        <strong className="text-3xl lg:text-6xl">DUBAI</strong>
+        <p className="lg:text-2xl">Emirates arabes unis - 6 Nuits / 7 Jours</p>
       </div>
 
       <img
